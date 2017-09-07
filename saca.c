@@ -332,7 +332,7 @@ int main(int argc, char const *argv[])
             ydif = abs(avions[i].y - avions[j].y);
             adif = abs(avions[i].a - avions[j].a);
              
-            if(xdif <= limit || ydif <= limit || adif <= limit)
+            if(xdif <= limit && ydif <= limit && adif <= limit)
             {
               printf("Avion %s et %s vont s'ecarser, veuillez intervenir\n",nomAvions[i],nomAvions[j]);
             }
